@@ -2,7 +2,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: rgb(202, 204, 206);
 }
-
+.todo {
+  text-align: center;
+}
 /*!---------------------------------------------------------------MENU INICIO---------------------------------------------------------------*/
 .menu {
   background: rgb(255, 255, 255);
@@ -11,6 +13,9 @@ body {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 2%;
+  box-shadow: 10px 10px 20px rgba(131, 131, 131, 0.76);
+  box-sizing: border-box;
+  text-align: right;
 }
 .menu li a {
   text-decoration: none;
@@ -20,18 +25,29 @@ body {
 .menu li {
   display: inline-block;
 }
+/*_-------------------------------Cuando el cursor se ponga en el boton ----------------------------------*/
+
+.menu li a:hover {
+  color: #254be6;
+}
+.menu li:hover {
+  color: #254be6;
+}
 /*_-------------------------------FormuFisic----------------------------------*/
 .menu li h1 {
   display: inline-block;
-  text-align: center;
   font-size: larger;
   padding: 0px;
   margin: 0px;
   /*Espacio desde FormuFisic hasta los botones con li a*/
-  margin-right: 800px;
+  margin-right: 900px;
 }
 .menu li h1 a {
   color: rgb(127, 229, 255);
+}
+/*!---------------------------------------------------------------IMAGEN INICIAL DEL CONTENIDO---------------------------------------------------------------*/
+.imginicial {
+  border-radius: 10px;
 }
 /*!---------------------------------------------------------------CONTENIDO---------------------------------------------------------------*/
 .contenido {
@@ -40,6 +56,13 @@ body {
   padding: 20px;
   margin: auto;
   border-radius: 10px;
+  text-align: left;
+}
+/*_-------------------------------texto----------------------------------*/
+.contenido h2,
+h3,
+h4 {
+  text-align: center;
 }
 /*!---------------------------------------------------------------CAJAS---------------------------------------------------------------*/
 .cajas {
@@ -95,7 +118,11 @@ body {
 .caja .botones .boton.operador {
   background: #3e60e9;
 }
-
+.botones a.boton.operador,
+.boton.ver {
+  text-decoration: none;
+}
+/*_-------------------------------Cuando el cursor se ponga en el boton ----------------------------------*/
 .caja .botones .boton.operador:hover {
   background: #254be6;
 }
@@ -107,7 +134,68 @@ body {
 .caja .botones .boton.ver:hover {
   background: #acabab;
 }
-.botones a.boton.operador,
-.boton.ver {
-  text-decoration: none;
+/*!---------------------------------------------------------------Operador Bandeja---------------------------------------------------------------*/
+
+/*!---------------------------------------------------------------Pantalla---------------------------------------------------------------*/
+/*_-------------------------------ANCHO----------------------------------*/
+@media screen and (max-width: 1400px) {
+  .menu li h1 {
+    margin-right: 500px;
+  }
 }
+@media screen and (max-width: 1000px) {
+  .menu {
+    width: 100%;
+  }
+  .menu li h1 {
+    margin-right: 530px;
+  }
+  .imginicial {
+    width: 80%;
+  }
+  .contenido {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .menu {
+    width: 100%;
+  }
+  .menu li h1 {
+    margin-right: 530px;
+  }
+  .imginicial {
+    width: 80%;
+  }
+  .contenido {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .imginicial {
+    width: 90%;
+  }
+  .contenido {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu {
+    width: 100%;
+  }
+  .menu li h1 {
+    margin-right: 150px;
+  }
+  .imginicial {
+    width: 100%;
+  }
+  .contenido {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu li h1 {
+    margin-right: 100px;
+  }
+}
+/*_-------------------------------ALTURA----------------------------------*/

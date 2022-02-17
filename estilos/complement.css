@@ -1,0 +1,72 @@
+/*!---------------------------------------------------------------TABLA---------------------------------------------------------------*/
+.contenido table {
+  background: rgb(22, 22, 22);
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #0037ff;
+}
+.contenido td,
+th {
+  padding: 3px;
+  text-align: left;
+}
+/*_-------------------------------Colores----------------------------------*/
+.contenido th.u {
+  color: rgb(0, 255, 157);
+}
+.contenido td.u {
+  color: rgb(0, 255, 157);
+}
+.contenido th.d {
+  color: rgb(89, 0, 255);
+}
+.contenido td.d {
+  color: rgb(89, 0, 255);
+}
+.contenido th.t {
+  color: rgb(218, 255, 97);
+}
+.contenido td.t {
+  color: rgb(218, 255, 97);
+}
+/*!---------------------------------------------------------------Formulas---------------------------------------------------------------*/
+.formulas {
+  text-align: center;
+  margin: auto;
+  background: rgb(22, 22, 22);
+  border-radius: 10px;
+  color: #0037ff;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40%;
+  font-family: monospace;
+}
+/*_-------------------------------Colores----------------------------------*/
+.formulas span.u {
+  color: aqua;
+}
+.formulas span.d {
+  color: rgb(3, 228, 52);
+}
+.formulas span.t {
+  color: rgb(230, 46, 0);
+}
+.formulas span.c {
+  color: rgb(216, 219, 0);
+}
+/*!---------------------------------------------------------------Pantalla---------------------------------------------------------------*/
+/*_-------------------------------ANCHO----------------------------------*/
+@media screen and (max-width: 800px) {
+  .formulas {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .formulas {
+    width: 100%;
+  }
+}
