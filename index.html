@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="estilos/style.css">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="js/Fisica/conversor.js"></script>
+  <script src="js/Fisica/operador.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +26,8 @@
       <li>
         <h1><a href="index.html">FormuFisic</a></h1>
       </li>
-      <li>|<a href="#">Inicio</a></li>
+      <li>|<a href="index.html">Inicio</a></li>
+      <li>|<a href="#" onclick="conversor();">Conversor</a></li>
     </ul>
     <div class="cajas">
       <div class="caja">
@@ -34,6 +39,12 @@
       </div>
     </div>
   </div>
+  <script>
+    swal(`By ZX`, `Bienvenido a FormuFisic!`, `info`)
+      .then((value) => {
+        swal(`Hey!`, `Agrega cada requisito de lo que te pida el operador con sus respectivas unidades correctas (kilogramo,metros etc..)`, `warning`)
+      })
+  </script>
 </body>
 
 </html>

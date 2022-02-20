@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="estilos/complement.css">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="js/Fisica/conversor.js"></script>
+  <script src="js/Fisica/operador.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -29,13 +33,13 @@
     <aside>
       <h3 class="titulo"><a href="#">Conversor</a></h3>
       <nav class="indice">
-        <a href="#" onclick="">Velocidad</a>
-        <a href="#" onclick="">Aceleración</a>
-        <a href="#" onclick="">Fuerza</a>
+        <a href="#" onclick="vbasica();">Velocidad</a>
+        <a href="#" onclick="abasica();">Aceleración</a>
+        <a href="#" onclick="fbasica();">Fuerza</a>
         <a href="#" onclick="">Energías</a>
-        <a href="#" onclick="">Potencia</a>
-        <a href="#" onclick=""><small>Trabajo Mecánico</small>.</a>
-        <a href="#" onclick="">Temperatura</a>
+        <a href="#" onclick="pbasica();">Potencia</a>
+        <a href="#" onclick="tmecbasica();"><small>Trabajo Mecánico</small>.</a>
+        <a href="#" onclick="temperatura();">Temperatura</a>
       </nav>
     </aside>
     <div class="contenedor">
