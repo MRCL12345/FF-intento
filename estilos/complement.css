@@ -70,3 +70,51 @@ th {
     width: 100%;
   }
 }
+/*!---------------------------------------------------------------MENU 2---------------------------------------------------------------*/
+
+aside {
+  width: 16%;
+  background: #1d2f3d;
+  padding: 20px;
+  border-radius: 3px;
+  position: sticky;
+  top: 20px;
+  float: left;
+  margin-right: -500px;
+  text-align: center;
+}
+
+aside .titulo a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+aside .indice a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  background: #ffffff;
+  width: 25%;
+  max-width: 25%;
+  height: 25%;
+  max-height: 25%;
+  border-radius: 3px;
+  color: black;
+  padding: 10px;
+  float: left;
+  margin: 1px;
+}
+aside .indice a small {
+  font-size: xx-small;
+}
+/*_-------------------------------Cuando el cursor se ponga en el boton ----------------------------------*/
+aside .indice a:hover {
+  color: #353535;
+  background: #ebebeb;
+}
+aside .titulo a:hover {
+  color: #c7c7c7;
+}
