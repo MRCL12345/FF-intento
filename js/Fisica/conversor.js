@@ -9,6 +9,7 @@ function conversor() {
         distancia: "Distancia",
         masa: "Masa",
         temperatura: "Temperatura",
+        tiempo: "Tiempo",
       },
     }
   ).then((value) => {
@@ -24,6 +25,9 @@ function conversor() {
         break;
       case "temperatura":
         temperatura();
+        break;
+      case "tiempo":
+        convertt();
         break;
     }
   });
@@ -199,4 +203,45 @@ function kelvin() {
     ${((parseFloat(value) - 273.15) * 9) / 5 + 32} °F
     ${value - 273.15} °C`);
   });
+}
+//!-----------------------------CONVERSIONES DE TIEMPO
+//_-----------------------------MENSAJE
+function convertt() {
+  swal(`¿Qué unidades de tiempo tienes?`, {
+    buttons: {
+      horas: "Horas",
+      min: "Minutos",
+    },
+  }).then((value) => {
+    switch (value) {
+      case "horas":
+        horas();
+        break;
+      case "min":
+        minutos();
+        break;
+      default:
+        break;
+    }
+  });
+  function horas() {
+    swal(`Introduce las horas que tienes.`, {
+      content: "input",
+    }).then((value) => {
+      swal(
+        `Tienes:
+        ${parseFloat(value) * 3600}s`
+      );
+    });
+  }
+  function minutos() {
+    swal(`Introduce los minutos que tienes.`, {
+      content: "input",
+    }).then((value) => {
+      swal(
+        `Tienes:
+        ${parseFloat(value) * 60}s`
+      );
+    });
+  }
 }

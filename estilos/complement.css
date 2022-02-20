@@ -58,21 +58,11 @@ th {
 .formulas span.c {
   color: rgb(216, 219, 0);
 }
-/*!---------------------------------------------------------------Pantalla---------------------------------------------------------------*/
-/*_-------------------------------ANCHO----------------------------------*/
-@media screen and (max-width: 800px) {
-  .formulas {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .formulas {
-    width: 100%;
-  }
-}
-/*!---------------------------------------------------------------MENU 2---------------------------------------------------------------*/
 
-aside {
+/*!---------------------------------------------------------------BLOQUE CONVERSOR---------------------------------------------------------------*/
+
+.Bloque_Conversor {
+  box-shadow: 10px 10px 20px rgba(131, 131, 131, 0.76);
   width: 16%;
   background: #1d2f3d;
   padding: 20px;
@@ -84,7 +74,7 @@ aside {
   text-align: center;
 }
 
-aside .titulo a {
+.Bloque_Conversor .titulo a {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 24px;
@@ -92,7 +82,7 @@ aside .titulo a {
   color: #f2f2f2;
   text-decoration: none;
 }
-aside .indice a {
+.Bloque_Conversor .indice a {
   text-decoration: none;
   display: block;
   margin-bottom: 10px;
@@ -107,14 +97,75 @@ aside .indice a {
   float: left;
   margin: 1px;
 }
-aside .indice a small {
+.Bloque_Conversor .indice a small {
   font-size: xx-small;
 }
 /*_-------------------------------Cuando el cursor se ponga en el boton ----------------------------------*/
-aside .indice a:hover {
+.Bloque_Conversor .indice a:hover {
   color: #353535;
   background: #ebebeb;
 }
-aside .titulo a:hover {
+.Bloque_Conversor .titulo a:hover {
   color: #c7c7c7;
+}
+/*!---------------------------------------------------------------BLOQUE OPERADOR---------------------------------------------------------------*/
+
+.Bloque_Operador {
+  box-shadow: 10px 10px 20px rgba(131, 131, 131, 0.76);
+  width: 16%;
+  background: #1d2f3d;
+  padding: 20px;
+  border-radius: 3px;
+  position: sticky;
+  top: 20px;
+  float: right;
+  text-align: center;
+  margin-left: -500px;
+}
+
+.Bloque_Operador .titulo a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.Bloque_Operador .indice a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  background: #ffffff;
+  width: 25%;
+  max-width: 25%;
+  height: 25%;
+  max-height: 25%;
+  border-radius: 3px;
+  color: black;
+  padding: 10px;
+  float: left;
+  margin: 1px;
+}
+.Bloque_Operador .indice a small {
+  font-size: xx-small;
+}
+/*_-------------------------------Cuando el cursor se ponga en el boton ----------------------------------*/
+.Bloque_Operador .indice a:hover {
+  color: #353535;
+  background: #ebebeb;
+}
+.Bloque_Operador .titulo a:hover {
+  color: #c7c7c7;
+}
+/*!---------------------------------------------------------------Pantalla---------------------------------------------------------------*/
+/*_-------------------------------ANCHO----------------------------------*/
+@media screen and (max-width: 800px) {
+  .formulas {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .formulas {
+    width: 100%;
+  }
 }
