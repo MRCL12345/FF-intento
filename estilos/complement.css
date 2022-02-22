@@ -168,4 +168,18 @@ th {
   .formulas {
     width: 100%;
   }
+  .Bloque_Operador {
+    margin: 0%;
+    margin-left: 0px;
+    width: 100%;
+    position: relative;
+    float: right;
+  }
+  .Bloque_Conversor {
+    margin: 0%;
+    margin-right: 0px;
+    width: 100%;
+    position: relative;
+    float: right;
+  }
 }

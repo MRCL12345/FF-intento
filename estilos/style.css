@@ -5,6 +5,11 @@ body {
 .contenedor {
   text-align: center;
 }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 /*!---------------------------------------------------------------MENU INICIO---------------------------------------------------------------*/
 .menu {
   background: rgb(255, 255, 255);
