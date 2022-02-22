@@ -142,11 +142,6 @@ h4 {
 }
 /*!---------------------------------------------------------------Pantalla---------------------------------------------------------------*/
 /*_-------------------------------ANCHO----------------------------------*/
-@media screen and (max-width: 1400px) {
-  .menu li h1 {
-    margin-right: 500px;
-  }
-}
 @media screen and (max-width: 1000px) {
   .menu {
     width: 100%;
@@ -188,7 +183,7 @@ h4 {
     width: 100%;
   }
   .menu li h1 {
-    margin-right: 150px;
+    margin-right: 190px;
   }
   .imginicial {
     width: 100%;
@@ -197,9 +192,29 @@ h4 {
     width: 100%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .menu li h1 {
     margin-right: 100px;
   }
 }
+@media screen and (max-width: 450px) {
+  .menu li h1 {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu li h1 {
+    margin-right: 50px;
+  }
+  .cajas {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .menu li h1 {
+    margin-right: 10px;
+  }
+}
+
 /*_-------------------------------ALTURA----------------------------------*/
