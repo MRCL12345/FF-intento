@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/complement.css">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="js/Fisica/conversor.js"></script>
+  <script src="js/Fisica/operador.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <style>
+    body {
+      background: rgb(0, 0, 0);
+    }
+
+    #particles-js {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: -1;
+    }
+
+    .menu {
+
+      margin-bottom: 1%;
+    }
+
+    .menu li h1 {}
+
+    .todo {
+      position: relative;
+      z-index: 99;
+    }
+  </style>
+
+  <div class="todo">
+    <ul class="menu">
+      <li>
+        <h1><a href="index.html">ENERGY</a></h1>
+      </li>
+    </ul>
+    <!--!------------------------------------------------------------------------------------------------>
+    <div class="contenedor">
+      <div class="contenido">
+        <h2>Aceleración</h2>
+        <p>La aceleración es el nombre que le damos a cualquier proceso en donde la velocidad cambia. Como la velocidad
+          es
+          una
+          rapidez y una dirección, solo hay dos maneras para que aceleres: cambia tu rapidez o cambia tu dirección (o
+          cambia
+          ambas).</p>
+        <section class="formulas">
+          <p>
+            <span class="t">v</span> = <span class="u">d</span> / <span class="d">t</span> <br>
+            <span class="t">velocidad</span> = <span class="u">distancia</span> % <span class="d">tiempo</span> <br>
+            <span class="t">velocidad</span> igual a dividir <span class="u">la distancia</span> entre <span
+              class="d">el
+              tiempo</span> <br>
+            (Su unidad es en metro sobre segundo (m/s)) <br>
+          </p>
+        </section>
+        <p>Para medir la velocidad necesitamos de dos datos, la distancia que recorrio el cuerpo y el tiempo empleado,
+          solo
+          dividamos el valor numerico de la distancia y el valor numerico del tiempo. Ejemplo, si un camion recorrio una
+          distancia
+          de 100m durante un tiempo de 23s. ¿Cuál será su velocidad?
+        </p>
+        <table>
+          <tr>
+            <th class="u">Datos:</th>
+            <th class="d">Formula:</th>
+            <th class="t">Operación:</th>
+            <th>Resultado:</th>
+          </tr>
+          <tr>
+            <td class="u">t = 23s</td>
+            <td rowspan="2" class="d"> v = d/t</td>
+            <td rowspan="2" class="t">v = 23s % 100m</td>
+            <td rowspan="2" class="">v = 4.34m/s</td>
+          </tr>
+          <tr>
+            <td class="u">d = 100m</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="js/particles/particles.min.js"></script>
+  <script src="js/particles/main.js"></script>
+</body>
+
+</html>
