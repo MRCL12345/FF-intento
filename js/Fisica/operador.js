@@ -215,5 +215,35 @@ function vbasica() {
   );
 }
 
-//!-------------------------------------------------------------------------------------
+//!-------------------------------------------------------------------------------------ENERGIAS
+function energias() {
+  swal({
+    buttons: {
+      cancel: "Cancelar",
+      ep: "Potencial",
+      ec: "Cinética",
+      e: "Energia",
+      emec: "Mecánica",
+    },
+  }).then((value) => {
+    switch (value) {
+      case "ep":
+        epbasica();
+        break;
+      case "ec":
+        ecbasica();
+        break;
+      case "e":
+        e();
+        break;
+      case "emec":
+        emecbasica();
+        break;
+    }
+  });
+}
+//_______________________ENERGIA EN SI
+function e() {
+  swal("Fórmula:", "E = mc²");
+}
 //!-------------------------------------------------------------------------------------
