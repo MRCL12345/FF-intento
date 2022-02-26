@@ -216,7 +216,7 @@ function vbasica() {
 }
 
 //!-------------------------------------------------------------------------------------ENERGIAS
-function energias() {
+function energiasoperador() {
   swal({
     buttons: {
       cancel: "Cancelar",
@@ -238,6 +238,32 @@ function energias() {
         break;
       case "emec":
         emecbasica();
+        break;
+    }
+  });
+}
+function energiaspaginas() {
+  swal({
+    buttons: {
+      cancel: "Cancelar",
+      ep: "Potencial",
+      ec: "Cinética",
+      e: "Energia",
+      emec: "Mecánica",
+    },
+  }).then((value) => {
+    switch (value) {
+      case "ep":
+        location.href = "ep.html";
+        break;
+      case "ec":
+        location.href = "ec.html";
+        break;
+      case "e":
+        location.href = "e.html";
+        break;
+      case "emec":
+        location.href = "emec.html";
         break;
     }
   });

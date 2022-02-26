@@ -13,7 +13,6 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <script src="js/Fisica/conversor.js"></script>
   <script src="js/Fisica/operador.js"></script>
-  <script src="js/main.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
@@ -71,19 +70,16 @@
           ambas).</p>
         <section class="formulas">
           <p>
-            <span class="t">v</span> = <span class="u">d</span> / <span class="d">t</span> <br>
-            <span class="t">velocidad</span> = <span class="u">distancia</span> % <span class="d">tiempo</span> <br>
-            <span class="t">velocidad</span> igual a dividir <span class="u">la distancia</span> entre <span
-              class="d">el
-              tiempo</span> <br>
-            (Su unidad es en metro sobre segundo (m/s)) <br>
+            <span class="t">a</span> = <span class="u">v</span> / <span class="d">t</span> <br>
+            <span class="t">aceleración</span> = <span class="u">velocidad</span> % <span class="d">tiempo</span> <br>
+            <span class="t">aceleración</span> igual a dividir <span class="u">la velocidad</span> entre <span
+              class="d">el tiempo</span> <br>
+            (Su unidad es en metro sobre segundo (m/s²))
           </p>
         </section>
-        <p>Para medir la velocidad necesitamos de dos datos, la distancia que recorrio el cuerpo y el tiempo empleado,
-          solo
-          dividamos el valor numerico de la distancia y el valor numerico del tiempo. Ejemplo, si un camion recorrio una
-          distancia
-          de 100m durante un tiempo de 23s. ¿Cuál será su velocidad?
+        <p>
+          Para medir la aceleración necesitamos dos principales datos. La velocidad, y el tiempo, si por ejemplo un
+          carro va a una velocidad de 1.5m/s y su tiempo andando fue de 5s, ¿Cuál seria su aceleración?
         </p>
         <table>
           <tr>
@@ -93,13 +89,13 @@
             <th>Resultado:</th>
           </tr>
           <tr>
-            <td class="u">t = 23s</td>
-            <td rowspan="2" class="d"> v = d/t</td>
-            <td rowspan="2" class="t">v = 23s % 100m</td>
-            <td rowspan="2" class="">v = 4.34m/s</td>
+            <td class="u">v = 1.5m/s</td>
+            <td rowspan="2" class="d">a = v / t</td>
+            <td rowspan="2" class="t">a = 1.5m/s % 5s</td>
+            <td rowspan="2" class="">a = 0.3m/s²</td>
           </tr>
           <tr>
-            <td class="u">d = 100m</td>
+            <td class="u">t = 5s</td>
           </tr>
         </table>
       </div>
