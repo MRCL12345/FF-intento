@@ -90,10 +90,8 @@ th {
   display: block;
   margin-bottom: 10px;
   background: #ffffff;
-  width: 25%;
-  max-width: 25%;
-  height: 25%;
-  max-height: 25%;
+  width: 70px;
+  height: 15px;
   border-radius: 3px;
   color: black;
   padding: 10px;
@@ -139,17 +137,15 @@ th {
   display: block;
   margin-bottom: 10px;
   background: #ffffff;
-  width: 25%;
-  max-width: 25%;
-  height: 25%;
-  max-height: 25%;
+  width: 70px;
+  height: 15px;
   border-radius: 3px;
   color: black;
   padding: 10px;
   float: left;
   margin: 1px;
 }
-.Bloque_Operador .indice a small {
+.Bloque_Operador .indice a.small {
   font-size: xx-small;
 }
 /*_-------------------------------Cuando el cursor se ponga en el boton ----------------------------------*/
