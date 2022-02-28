@@ -73,7 +73,7 @@ h4 {
 /*!---------------------------------------------------------------CAJAS---------------------------------------------------------------*/
 .cajas {
   margin: auto;
-  width: 62%;
+  width: 75%;
 }
 .caja {
   background: #fefefe;
@@ -86,7 +86,7 @@ h4 {
   display: flex;
   align-items: flex-end;
   margin-top: 80px;
-  margin-left: 10px;
+  margin-left: 5px;
   position: relative;
   float: left;
   margin-bottom: 0%;
