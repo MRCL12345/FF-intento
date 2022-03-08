@@ -10,6 +10,7 @@ function conversor() {
         masa: "Masa",
         temperatura: "Temperatura",
         tiempo: "Tiempo",
+        coulomb: "Coulombs",
       },
     }
   ).then((value) => {
@@ -28,6 +29,9 @@ function conversor() {
         break;
       case "tiempo":
         convertt();
+        break;
+      case "coulomb":
+        convertc();
         break;
     }
   });
@@ -244,4 +248,38 @@ function convertt() {
       );
     });
   }
+}
+//!-----------------------------CONVERSIONES DE COULOMS
+//_-----------------------------MENSAJE
+function convertc() {
+  swal(`¿Qué unidades tienes?`, {
+    buttons: {
+      mc: "Micro Coulomb",
+      nc: "Nano Coulmb",
+    },
+  }).then((value) => {
+    switch (value) {
+      case "mc":
+        mc();
+        break;
+      case "nc":
+        nc();
+        break;
+    }
+  });
+}
+//_-----------------------------OPERADOR
+function mc() {
+  swal("Introduce la cantidad de Micro Coulomb", {
+    content: "input",
+  }).then((value) => {
+    swal(`Tienes: ${value * Math.pow(10, -6)} C`);
+  });
+}
+function nc() {
+  swal("Introduce la cantindad de Nano Coulomb", {
+    content: "input",
+  }).then((value) => {
+    swal(`Tienes: ${value * Math.pow(10, -9)} C`);
+  });
 }
